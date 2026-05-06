@@ -1,36 +1,94 @@
+/* Toàn bộ phông nền và căn chỉnh chính */
 body {
-    background-color: #f5f5dc; /* Màu kem */
+    background-color: #fdf5e6; /* Màu trắng kem (Old Lace) nhẹ nhàng */
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #5d4037; /* Màu nâu trầm */
+    color: #5d4037; /* Màu nâu cà phê trầm cho chữ */
 }
+
+/* Khung chứa nội dung chính */
 .container {
     text-align: center;
-    border: 2px solid #d7ccc8;
-    padding: 50px;
-    border-radius: 20px;
-    background: white;
-/* Nút bấm đầu tiên */
+    background-color: #ffffff; /* Nền trắng bên trong khung */
+    padding: 40px 30px;
+    border-radius: 25px; /* Bo góc mềm mại */
+    box-shadow: 0 10px 30px rgba(141, 110, 99, 0.15); /* Đổ bóng nhẹ màu nâu */
+    max-width: 450px;
+    width: 90%;
+    border: 1px solid #efebe9;
+}
+
+/* Tiêu đề chính */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4e342e;
+}
+
+/* Đoạn văn mô tả ban đầu */
+p {
+    font-size: 1rem;
+    color: #795548;
+    margin-bottom: 25px;
+}
+
+/* Phong cách chung cho các nút bấm */
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; /* Nút hình viên thuốc mềm mại */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hiệu ứng mượt mà khi di chuột */
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút bấm thứ nhất (Màu nâu đậm) */
 #btn1 {
     background-color: #8d6e63;
-    color: white;
+    color: #ffffff;
 }
 
-/* Nút bấm thứ hai - đổi màu khác đi một chút */
+#btn1:hover {
+    background-color: #6d4c41;
+    transform: translateY(-2px); /* Nhấp nhô nhẹ khi di chuột */
+}
+
+/* Nút bấm thứ hai (Màu nâu nhạt/kem đậm) */
 #btn2 {
-    background-color: #a1887f;
-    color: white;
-    border: 2px dashed #f5f5dc; /* Thêm viền đứt đoạn cho lạ mắt */
+    background-color: #d7ccc8;
+    color: #4e342e;
+    border: 1px solid #bcaaa4;
 }
 
+#btn2:hover {
+    background-color: #bcaaa4;
+    transform: scale(1.05); /* Phóng to nhẹ khi di chuột */
 }
+
+/* Khung chứa lời nhắn ẩn */
 #hidden-message {
-    text-align: left; /* Để đoạn văn căn lề trái cho giống kiểu gõ văn bản */
-    max-width: 400px;
-    margin: 20px auto;
-    font-size: 1.1rem;
-    color: #5d4037; /* Màu nâu trầm dịu mắt */
+    margin-top: 30px;
+    text-align: left; /* Căn lề trái để hiệu ứng đánh máy trông tự nhiên */
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 3px solid #8d6e63; /* Thanh dọc trang trí bên trái */
+    border-radius: 5px;
+}
+
+/* Từng đoạn văn trong lời nhắn */
+#text-paragraph-1, #text-paragraph-2 {
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 1.05rem;
+}
+
+#text-paragraph-2 {
+    font-style: italic; /* Đoạn 2 in nghiêng cho thêm phần bay bổng */
+    color: #8d6e63;
 }
