@@ -22,3 +22,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+#hidden-message {
+    text-align: left; /* Để đoạn văn căn lề trái cho giống kiểu gõ văn bản */
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #5d4037; /* Màu nâu trầm dịu mắt */
+}
