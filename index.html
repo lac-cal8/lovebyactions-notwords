@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>From Lạc</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>For Zyel</h1>
-        <p>Hôm nay Lạc cảm thấy thích Zy hơn mọi khi?</p>
-        <div class="container">
-    <button id="btn-1" onclick="changeButton()">Đừng bấm mà</button>
-
-    <button id="btn-2" style="display: none;" onclick="nextStep()">Lạc đã nhắc rồi đó</button>
-</div>
-        <div id="hidden-message" style="display:none;">
-    <p id="text-paragraph-1" style="margin-bottom: 20px; line-height: 1.6;"></p>
-    <p id="text-paragraph-2" style="line-height: 1.6; font-style: italic;"></p>
-</div>
-
+<div class="container">
+    <h1>Chào mừng đến với không gian của mình</h1>
+    <p>Hôm nay em cảm thấy thế nào?</p>
+    
+    <button id="btn1" onclick="showNextButton()">Nhấn vào đây nhé</button>
+    
+    <button id="btn2" style="display:none;" onclick="startTyping()">Tiếp tục nào...</button>
+    
+    <div id="hidden-message" style="display:none;">
+        <p id="text-paragraph-1" style="margin-bottom: 20px;"></p>
+        <p id="text-paragraph-2"></p>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+</div>
